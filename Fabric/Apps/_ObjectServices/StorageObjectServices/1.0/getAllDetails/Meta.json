@@ -7,8 +7,6 @@
     "get" : "getMapping"
   },
   "entityProperties" : {
-    "BatchMode" : "buffer",
-    "backendMeta" : { },
-    "designTimeBackendMeta" : { }
+    "BatchMode" : "buffer"
   }
 }

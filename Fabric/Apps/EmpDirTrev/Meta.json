@@ -1,6 +1,6 @@
 {
   "subType" : "customapp",
-  "description" : "EmployeeDirectory\r\n",
+  "description" : "EmpDirTrev",
   "version" : "1.0",
   "intSvcs" : [ {
     "name" : "fetchImageService",

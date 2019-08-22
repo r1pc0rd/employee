@@ -46,7 +46,6 @@
     "applyResponseCommonMapping" : true,
     "opcode" : "query",
     "relationshipHierarchyMapping" : {
-      "children" : [ ],
       "name" : "Contact",
       "actions" : {
         "get" : true

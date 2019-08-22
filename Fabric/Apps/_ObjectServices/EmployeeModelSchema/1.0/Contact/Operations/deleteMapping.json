@@ -14,7 +14,6 @@
     "applyResponseCommonMapping" : true,
     "opcode" : "delete",
     "relationshipHierarchyMapping" : {
-      "children" : [ ],
       "name" : "Contact",
       "actions" : {
         "delete" : true

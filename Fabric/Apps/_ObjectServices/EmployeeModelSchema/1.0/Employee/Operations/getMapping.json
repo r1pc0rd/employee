@@ -48,7 +48,6 @@
     "relationshipHierarchyMapping" : {
       "children" : [ {
         "actionsAllSelected" : true,
-        "children" : [ ],
         "name" : "Contact",
         "actions" : {
           "get" : true
