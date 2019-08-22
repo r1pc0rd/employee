@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "Location",
+  "targetObject" : "Employee",
+  "relationshipKeys" : [ {
+    "sourceField" : "Location_id",
+    "targetField" : "Location_id",
+    "etag" : "b617c994-bc57-4bd3-9128-0615a3b5d4f5"
+  } ],
+  "name" : "Location_Employee",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : true
+} ]

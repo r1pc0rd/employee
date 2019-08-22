@@ -1,0 +1,51 @@
+populateDataToSegment: function(tempData) {
+   
+
+      var dataLength = tempData.length;
+      var segObj = {};
+      var segList = [];
+      var postObj;
+      for (var i = 0; i < dataLength; i++) {
+        postObj = tempData.records[i];
+        segObj = {};
+        segObj["lblName"] = postObj["author"]["name"];
+        
+          segObj["lblTitle"] = postObj["title"];
+        
+          segObj["lblContent"] = postObj["content"];
+        
+        segObj["lblDate"] = postObj["date"];
+		
+       if ((postObj["attachments"]!==undefined && postObj["attachments"]["9"]!==undefined && postObj["attachments"]["9"]["profile_URL"] !== undefined) {
+          segObj["imgPost"] = postObj["attachments"]["9"]["URL"];
+		  
+        } else {
+          segObj["imgPost"] = {
+            "src": "kony_48.png"
+          };
+        }
+		
+		 if (( postObj["author"]!==undefined && postObj["author"]["profile_URL"] !== undefined) {
+          segObj["imgProfilePic"] = postObj["author"]["profile_URL"];
+		  
+        } else {
+          segObj["imgProfilePic"] = {
+            "src": "kony_48.png"
+          };
+        }
+		
+		 
+		
+		
+        
+
+        segList.push(segObj);
+      }
+     
+
+      this.view.segListCards.removeAll();
+      this.view.segListCards.addAll(segList);
+
+      this.view.forceLayout();
+    
+  },

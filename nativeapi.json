@@ -1,0 +1,176 @@
+{
+    "NativeFunctionAPI": {
+        "iOS": {
+            "11.0": {
+                "Kony_SDKCommons-iOS-11.0": {
+                    "title": "Kony_SDKCommons",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "url": "/Users/kh499/KonyVisualiser82/KonyVisualizerEnterprise8.2.0/Kony_Visualizer_Enterprise/configuration/org.eclipse.osgi/bundles/458/1/.cp/resources/sdk/nativeBindings/Kony_SDKCommons-iOS-11.0.zip",
+                    "filepath": "D:\\kony\\84WS\\EmpDirAdmin\\nativebindings\\iOS\\11.0\\Kony_SDKCommons-iOS-11.0.zip",
+                    "enable": true,
+                    "isDefault": true
+                },
+                "Kony_SyncV2-iOS-11.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "url": "/Users/kh499/KonyVisualiser82/KonyVisualizerEnterprise8.2.0/Kony_Visualizer_Enterprise/configuration/org.eclipse.osgi/bundles/458/1/.cp/resources/sdk/nativeBindings/Kony_SyncV2-iOS-11.0.zip",
+                    "filepath": "D:\\kony\\84WS\\EmpDirAdmin\\nativebindings\\iOS\\11.0\\Kony_SyncV2-iOS-11.0.zip",
+                    "enable": true,
+                    "isDefault": true
+                },
+                "Foundation-iOS-11.0": {
+                    "title": "Foundation",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "url": "D:\\kony\\8.2WS\\.nativebindings\\iOS\\11.0\\Foundation-iOS-11.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\iOS\\11.0\\Foundation-iOS-11.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "UIKit-iOS-11.0": {
+                    "title": "UIKit",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "url": "D:\\kony\\8.2WS\\.nativebindings\\iOS\\11.0\\UIKit-iOS-11.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\iOS\\11.0\\UIKit-iOS-11.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "AVFoundation-iOS-11.0": {
+                    "title": "AVFoundation",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "url": "D:\\WSfinal\\.imports\\.temp\\import190284744\\nativebindings\\iOS\\11.0\\AVFoundation-iOS-11.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\iOS\\11.0\\AVFoundation-iOS-11.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "Kony_FileStorage-iOS-11.0": {
+                    "title": "Kony_FileStorage",
+                    "platform": "iOS",
+                    "os": "11.0",
+                    "isDefault": true,
+                    "url": "D:\\kony\\install\\visualizerEnterprise\\834\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\459\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_FileStorage-iOS-11.0.zip",
+                    "filepath": "D:\\kony\\84WS\\EmpDirAdmin\\nativebindings\\iOS\\11.0\\Kony_FileStorage-iOS-11.0.zip",
+                    "enable": true
+                }
+            },
+            "10.0": {
+                "Foundation-iOS-10.0": {
+                    "title": "Foundation",
+                    "platform": "iOS",
+                    "os": "10.0",
+                    "url": "C:\\Users\\e2eq\\KonyVizEWS82GAMay25\\.nativebindings\\iOS\\10.0\\Foundation-iOS-10.0.zip",
+                    "filepath": "D:\\kony\\EmpDirWs\\EmpDirAdmin\\nativebindings\\iOS\\10.0\\Foundation-iOS-10.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "UIKit-iOS-10.0": {
+                    "title": "UIKit",
+                    "platform": "iOS",
+                    "os": "10.0",
+                    "url": "C:\\Users\\e2eq\\KonyVizEWS82GAMay25\\.nativebindings\\iOS\\10.0\\UIKit-iOS-10.0.zip",
+                    "filepath": "D:\\kony\\EmpDirWs\\EmpDirAdmin\\nativebindings\\iOS\\10.0\\UIKit-iOS-10.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "Kony_SyncV2-iOS-10.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "iOS",
+                    "os": "10.0",
+                    "url": "C:\\Users\\e2eq\\KonyVizEWS82GAMay25\\.nativebindings\\iOS\\10.0\\Kony_SyncV2-iOS-10.0.zip",
+                    "filepath": "C:\\Users\\e2eq\\KonyVizEWS82GAMay25\\EmpDirAdmin\\nativebindings\\iOS\\10.0\\Kony_SyncV2-iOS-10.0.zip",
+                    "enable": true,
+                    "isDefault": true
+                }
+            }
+        },
+        "Android": {
+            "4.0": {
+                "Kony_SDKCommons-Android-4.0": {
+                    "title": "Kony_SDKCommons",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "/Users/kh499/KonyVisualiser82/KonyVisualizerEnterprise8.2.0/Kony_Visualizer_Enterprise/configuration/org.eclipse.osgi/bundles/458/1/.cp/resources/sdk/nativeBindings/Kony_SDKCommons-Android-4.0.zip",
+                    "filepath": "D:\\kony\\84WS\\EmpDirAdmin\\nativebindings\\Android\\4.0\\Kony_SDKCommons-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": true
+                },
+                "Kony_SyncV2-Android-4.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "/Users/kh499/KonyVisualiser82/KonyVisualizerEnterprise8.2.0/Kony_Visualizer_Enterprise/configuration/org.eclipse.osgi/bundles/458/1/.cp/resources/sdk/nativeBindings/Kony_SyncV2-Android-4.0.zip",
+                    "filepath": "D:\\kony\\84WS\\EmpDirAdmin\\nativebindings\\Android\\4.0\\Kony_SyncV2-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": true
+                },
+                "android.webkit-Android-4.0": {
+                    "title": "android.webkit",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "C:\\Users\\e2eq\\KonyVizEWS82GAMay25\\.nativebindings\\Android\\4.0\\android.webkit-Android-4.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\Android\\4.0\\android.webkit-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "android.accounts-Android-4.0": {
+                    "title": "android.accounts",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "D:\\kony\\8.2WS\\.nativebindings\\Android\\4.0\\android.accounts-Android-4.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\Android\\4.0\\android.accounts-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "android.content-Android-4.0": {
+                    "title": "android.content",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "D:\\kony\\8.2WS\\.nativebindings\\Android\\4.0\\android.content-Android-4.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\Android\\4.0\\android.content-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "java.lang-Android-4.0": {
+                    "title": "java.lang",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "D:\\kony\\8.2WS\\.nativebindings\\Android\\4.0\\java.lang-Android-4.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\Android\\4.0\\java.lang-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "android.os-Android-4.0": {
+                    "title": "android.os",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "D:\\kony\\8.2WS\\.nativebindings\\Android\\4.0\\android.os-Android-4.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\Android\\4.0\\android.os-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "android.net-Android-4.0": {
+                    "title": "android.net",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "D:\\kony\\8.2WS\\.nativebindings\\Android\\4.0\\android.net-Android-4.0.zip",
+                    "filepath": "D:\\WSfinal\\EmpDirAdmin\\nativebindings\\Android\\4.0\\android.net-Android-4.0.zip",
+                    "enable": true,
+                    "isDefault": false
+                },
+                "Kony_FileStorage-Android-4.0": {
+                    "title": "Kony_FileStorage",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "isDefault": true,
+                    "url": "D:\\kony\\install\\visualizerEnterprise\\834\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\459\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_FileStorage-Android-4.0.zip",
+                    "filepath": "D:\\kony\\84WS\\EmpDirAdmin\\nativebindings\\Android\\4.0\\Kony_FileStorage-Android-4.0.zip",
+                    "enable": true
+                }
+            }
+        }
+    }
+}

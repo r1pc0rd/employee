@@ -1,0 +1,14 @@
+{
+  "name" : "reusableOffice365Login",
+  "displayName" : "reusableOffice365Login",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"logout_url\":\"\",\"additional_data\":{\"refresh_request\":[],\"token_request\":[],\"revoke_request\":[],\"profile_request\":[],\"authorize_request\":[]},\"auth_type\":\"oauth2\",\"grant_type\":\"authorization_code\",\"profile\":{\"profile_attribute_selectors\":{\"federation_id\":\"\",\"last_name\":\"\",\"custom_profile_attribute_selectors\":{},\"first_name\":\"\",\"email\":\"\"},\"endpoint\":{\"location\":\"\",\"type\":\"none\",\"value\":\"\"},\"request_method\":\"GET\"},\"authentication_scheme\":\"header\",\"client_authentication\":{\"authentication_scheme\":\"header\",\"client_secret\":\"Enter_Client_Secret\",\"client_id\":\"Enter_Client_Id\"},\"dependent_providers\":[],\"oauthProviderType\":\"default\",\"token_endpoint\":\"https://login.microsoftonline.com/f555833e-47a1-472c-80fc-8e0669657fd0/oauth2/token\",\"authorization_endpoint\":\"https://login.microsoftonline.com/f555833e-47a1-472c-80fc-8e0669657fd0/oauth2/authorize\"}",
+  "policyConfig" : "{\"max_login_fail\":5,\"def_user_status\":\"pending\"}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "ssoenabled" : false
+}

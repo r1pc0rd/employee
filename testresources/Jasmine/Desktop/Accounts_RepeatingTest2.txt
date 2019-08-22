@@ -1,0 +1,23 @@
+describe("Accounts", function() {
+    it("RepeatingTest", async function() {
+	// :User Injected Code Snippet [// - [16 lines]]
+        var test_data  = [
+{"user":"demo@kony.com","password":"Kony123!"},
+{"user":"demo@kony.com","password":"Kony123!"}
+];
+for (var key in test_data) {
+
+kony.automation.textbox.enterText(["frmLogin","txtUser"],"demo@kony.com");
+	
+	kony.automation.textbox.enterText(["frmLogin","txtPassWord"],"Kony123!");
+	await kony.automation.playback.wait(3000);	
+	kony.automation.button.click(["frmLogin","btnSubmit"]);
+	kony.automation.flexcontainer.click(["frmEmpList","flxLogout"]);
+await kony.automation.playback.wait(3000);
+expect("Sign in to your account").toEqual(kony.automation.widget.getWidgetProperty(["frmLogin","flexLoginCred","lbklSignInTitle"], "text"));
+}
+
+
+        // :End User Injected Code Snippet {4bc4006c-57cd-2cd0-0f98-22a74e0078df}
+    });
+});

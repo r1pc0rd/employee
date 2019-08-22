@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_e6aeb8b083a34fb9a160d3a680e8cd18": {
+        "id": "AS_FlexContainer_e6aeb8b083a34fb9a160d3a680e8cd18",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSetting",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a369de5a326c43e0b764ef2eef239f51"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___a156b0a624f44d448d359868c1329486",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "animateLeftMenu",
+            "display": "animateLeftMenu",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

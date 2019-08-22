@@ -1,0 +1,15 @@
+{
+    "AS_UWI_b05e79e69d7243e09772ee206cd77ff3": {
+        "id": "AS_UWI_b05e79e69d7243e09772ee206cd77ff3",
+        "type": "ACTION_SEQUENCE",
+        "params": [],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ja15969d78324c34b19d8c6da0624b61"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

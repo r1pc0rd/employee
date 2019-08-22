@@ -1,0 +1,132 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "-12px"
+    },
+    "_skin_": "s1aacf9f612e40ea86b7fcea1b3be23a",
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "number",
+        "value": ""
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "children": [
+        "flxEmployeeInfo",
+        "lineDummy",
+        "flxEmployeeDetails",
+        "lblFooter",
+        "lblDummey"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "focusskin": "s892d7e8adc34ae080363c17046a930b",
+    "horizontalscrollindicator": true,
+    "id": "EditProfile",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kiosk": {
+        "psp": {
+            "verticalScrollIndicator": false
+        }
+    },
+    "kuid": "c3779fbbae8a402f90ab01af29983319",
+    "layouttype": 4,
+    "minwidth": {
+        "type": "string",
+        "value": "600px"
+    },
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "flxProfileContainer",
+    "pf": "frmEmpDetails",
+    "responsiveData": {
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "81%"
+            },
+            "top": {
+                "type": "string",
+                "value": "40px"
+            }
+        },
+        "b4": {
+            "height": {
+                "type": "string",
+                "value": "81%"
+            },
+            "left": {
+                "type": "string",
+                "value": "0px"
+            },
+            "top": {
+                "type": "string",
+                "value": "40px"
+            }
+        },
+        "b5": {
+            "minWidth": {
+                "type": "string",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": "-15px"
+            },
+            "top": {
+                "type": "string",
+                "value": "0px"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "vizProps": {},
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 0
+}

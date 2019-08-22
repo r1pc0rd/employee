@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "60px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "ps2f2bc441634911e8b8c7635bc8852bf5",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "data": {
+        "ide_onUserFlxClick": "AS_UWI_bcf419b0a31d4368b84adca095b91995",
+        "onUserFlxClick": "AS_UWI_bcf419b0a31d4368b84adca095b91995"
+    },
+    "id": "empheader",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "f70f7e87c59c4849ab3459b643a19a4e",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxRoot",
+    "pf": "frmEmpDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "snaptogrid": true,
+    "sourceUserWidget": "abde30fee93341319e4ae0fca45de0e8",
+    "wType": "UserWidgetInstance"
+}

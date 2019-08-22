@@ -1,0 +1,14 @@
+{
+  "name" : "reusableLinkedinLogin",
+  "displayName" : "reusableLinkedinLogin",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"logout_url\":\"\",\"additional_data\":{\"refresh_request\":[],\"token_request\":[],\"revoke_request\":[],\"profile_request\":[{\"in\":\"query\",\"source\":\"constant\",\"value\":\"json\",\"key\":\"format\"}],\"authorize_request\":[]},\"auth_type\":\"oauth2\",\"grant_type\":\"authorization_code\",\"scope\":\"r_basicprofile r_emailaddress rw_company_admin\",\"profile\":{\"profile_attribute_selectors\":{\"federation_id\":\"id\",\"last_name\":\"lastName\",\"custom_profile_attribute_selectors\":{},\"first_name\":\"firstName\",\"email\":\"emailAddress\"},\"endpoint\":{\"location\":\"url\",\"type\":\"direct\",\"value\":\"https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address)\"},\"request_method\":\"GET\"},\"authentication_scheme\":\"header\",\"client_authentication\":{\"authentication_scheme\":\"form\",\"client_secret\":\"Enter_password\",\"client_id\":\"Enter_Clint_Id\"},\"dependent_providers\":[],\"oauthProviderType\":\"linkedin\",\"token_endpoint\":\"https://www.linkedin.com/oauth/v2/accessToken\",\"authorization_endpoint\":\"https://www.linkedin.com/oauth/v2/authorization\"}",
+  "policyConfig" : "{\"max_login_fail\":5,\"def_user_status\":\"pending\"}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "ssoenabled" : false
+}

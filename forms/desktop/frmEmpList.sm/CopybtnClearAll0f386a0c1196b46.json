@@ -1,0 +1,96 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "s09bc80f18f6484e800929f67b079c82",
+    "_text_": "Clear All",
+    "_top_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "18%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s2b948aa12ff45a2a8e795f785fcd2c7",
+    "id": "CopybtnClearAll0f386a0c1196b46",
+    "ide_onClick": "AS_Button_c602b9c7701944598172099a66e71de1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j06311975abc4394979c10c39d418a82",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_c602b9c7701944598172099a66e71de1",
+    "parent": "filterHEader",
+    "pf": "frmEmpList",
+    "responsiveData": {
+        "b2": {
+            "width": {
+                "type": "string",
+                "value": "50px"
+            }
+        },
+        "b4": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "height": {
+                "type": "string",
+                "value": "50%"
+            },
+            "left": {
+                "type": "string",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": "85px"
+            },
+            "top": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "15%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

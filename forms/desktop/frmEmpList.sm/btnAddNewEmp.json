@@ -1,0 +1,74 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "s2c06820a3a14b76b5cb4457c9fbffc0",
+    "_text_": "Add New Employee",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s2c06820a3a14b76b5cb4457c9fbffc0",
+    "id": "btnAddNewEmp",
+    "ide_onClick": "AS_Button_d54b47820677405ea2faed36533ac5f1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j946100fecf54758996ff839dd58b2c4",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_d54b47820677405ea2faed36533ac5f1",
+    "parent": "Rectangle6",
+    "pf": "frmEmpList",
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": ""
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 50
+}

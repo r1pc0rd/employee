@@ -1,0 +1,41 @@
+{
+  "operationConfig" : {
+    "name" : "deleteDesignation7619",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "opcode" : "delete",
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ {
+          "children" : [ ],
+          "name" : "Contact",
+          "actions" : {
+            "delete" : true
+          },
+          "selected" : false
+        } ],
+        "name" : "Employee",
+        "actions" : {
+          "delete" : true
+        },
+        "selected" : false
+      } ],
+      "name" : "Designation",
+      "actions" : {
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

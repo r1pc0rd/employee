@@ -1,0 +1,28 @@
+{
+    "AS_Button_b4900b7cfe6f4fb983c319933a6d6e73": {
+        "id": "AS_Button_b4900b7cfe6f4fb983c319933a6d6e73",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmpList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b14b0e33877349078c917130e12fc60f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___dca448875fa044d7b84a63a2e6dd7265",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "cancelSearchMob",
+            "display": "cancelSearchMob",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

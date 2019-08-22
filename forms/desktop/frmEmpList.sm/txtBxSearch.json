@@ -1,0 +1,118 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Type Keyword",
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "sacb7557b31b43f0ac64c68005a6d606",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "4dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "psp": {}
+    },
+    "disabledSkins": {},
+    "focusskin": "sd07c7a333db41b1ab8e102f6c3751a0",
+    "hoverskin": "",
+    "id": "txtBxSearch",
+    "ide_onTextChange": "AS_TextField_ja9150d585e0480abb910b1324296030",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "d5c4a6d3a2dc4f169dc7956eae24bef0",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "ontextchange": "AS_TextField_ja9150d585e0480abb910b1324296030",
+    "parent": "flxSearchBar",
+    "pf": "frmEmpList",
+    "placeholderskin": "sd0c26340a7c4a0fb99f7e773505f279",
+    "responsiveData": {
+        "b4": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "desktopweb": {
+                "psp": {
+                    "hoverSkin": "s219067d0f324420aa739b5998caf74d"
+                }
+            },
+            "disabledSkins": {},
+            "focusSkin": "s2c15ba9b1594f9c9e430ab635cdd737",
+            "isVisible": true,
+            "left": {
+                "type": "string",
+                "value": "55dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "55px"
+            },
+            "skin": "sacb7557b31b43f0ac64c68005a6d606",
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": ""
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

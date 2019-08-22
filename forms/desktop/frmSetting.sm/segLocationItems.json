@@ -1,0 +1,222 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgEdit": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "imgRemove": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblAddressValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblCityValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblCountryValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLocalityValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLocationValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Austin"
+            },
+            "lblZipCodeValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "120dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_top_": {
+        "type": "string",
+        "value": "54dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segLocationItems",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b8f642e6f85f4a558ada0ba91f78e306",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxLocationDetails",
+    "pf": "frmSetting",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "500dp"
+            },
+            "isVisible": true,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "-10px"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": ""
+            }
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "500px"
+            },
+            "left": {
+                "type": "string",
+                "value": "0px"
+            },
+            "right": {
+                "type": "string",
+                "value": "-10px"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": ""
+            }
+        },
+        "b4": {
+            "height": {
+                "type": "string",
+                "value": "500px"
+            },
+            "isVisible": true,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "-10px"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": ""
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "faafaa98130042a69aa5432ef96995bd",
+    "rowcounter": 0,
+    "rowfocusskin": "s1db3da8974843d2a5ee5a9a8d47f58d",
+    "rowskin": "s457b4d351df4372b33a845a4d0bad92",
+    "rowtemplate": "flxTemplateLocDesk",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sb125d2cf8c84b02aab462bd2aa033c6",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "f5edf500",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxEdit": "flxEdit",
+        "flxRemove": "flxRemove",
+        "flxTemplateLocDesk": "flxTemplateLocDesk",
+        "imgEdit": "imgEdit",
+        "imgRemove": "imgRemove",
+        "lblAddressValue": "lblAddressValue",
+        "lblCityValue": "lblCityValue",
+        "lblCountryValue": "lblCountryValue",
+        "lblId": "lblId",
+        "lblLocalityValue": "lblLocalityValue",
+        "lblLocationValue": "lblLocationValue",
+        "lblZipCodeValue": "lblZipCodeValue"
+    },
+    "zindex": 1
+}

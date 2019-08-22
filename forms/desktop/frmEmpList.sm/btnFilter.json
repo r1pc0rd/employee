@@ -1,0 +1,89 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "55dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "safd69f6c3dc482aabdc060f5ea07aec",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "977dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s5de8f13d09b4c6b9cbf0debe040e4a7",
+    "id": "btnFilter",
+    "ide_onClick": "AS_Button_ffd8b2bf409644cda6fd159611c385c5",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "je15a359481640839a33f52e1195efab",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_ffd8b2bf409644cda6fd159611c385c5",
+    "parent": "flxRoot",
+    "pf": "frmEmpList",
+    "responsiveData": {
+        "b1": {
+            "isVisible": false
+        },
+        "b2": {
+            "isVisible": false
+        },
+        "b4": {
+            "bottom": {
+                "type": "string",
+                "value": "0px"
+            },
+            "focusSkin": "safd69f6c3dc482aabdc060f5ea07aec",
+            "isVisible": true,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "skin": "safd69f6c3dc482aabdc060f5ea07aec",
+            "text": "Filter",
+            "top": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            },
+            "zIndex": 200
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 100
+}

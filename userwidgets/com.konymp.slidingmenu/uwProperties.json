@@ -1,0 +1,1877 @@
+{
+    "classname": "slidingmenu",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bfecf5008d1e4e91ba500999fe0075c9",
+                    "paramList": [],
+                    "propertyKey": "removeAllMenuItem",
+                    "pw": {
+                        "displayName": "removeAllMenuItem",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a079a53c271e40afaa5453533e05764f",
+                    "paramList": [
+                        {
+                            "name": "menuItems"
+                        },
+                        {
+                            "name": "submenuItems"
+                        }
+                    ],
+                    "propertyKey": "addMenuItems",
+                    "pw": {
+                        "displayName": "addMenuItems",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e52b7d7f427e490b8a4d977e2b618675",
+                    "paramList": [],
+                    "propertyKey": "showSlidingMenu",
+                    "pw": {
+                        "displayName": "showSlidingMenu",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fde86f63a46e4ccc92e092c82a211f8d",
+                    "paramList": [],
+                    "propertyKey": "hideSlidingMenu",
+                    "pw": {
+                        "displayName": "hideSlidingMenu",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i7110214b3a445fea1ed7cfbd7b5ca08",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onShowSlidingMenu",
+                    "pw": {
+                        "displayName": "onShowSlidingMenu",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e0c287bc17e441c1aab360abdc2f3042",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onHideSlidingMenu",
+                    "pw": {
+                        "displayName": "onHideSlidingMenu",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g3da0da0772f4f8580fee0564587eb34",
+                    "paramList": [
+                        {
+                            "name": "menuindex"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onMenuItemClick",
+                    "pw": {
+                        "displayName": "onMenuItemClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i2d15998bfb341e9a2479f057ad85d06",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 1,
+                    "propertyKey": "onFooterClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onFooterClick",
+                        "srcWidget": "flxBotom",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "e62614a9a84e462fad4cc8bbe1335bdf"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e089bdb60d8448e4ad4bd1357fd17326",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 2,
+                    "propertyKey": "onProfileClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onProfileClick",
+                        "srcWidget": "flxImage",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "h0a282ca17324c44bb1e95890cf93b09"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Transitions",
+                "Headings",
+                "Profile Options",
+                "Footer Options"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Left",
+                    "group": "Transitions",
+                    "kuid": "ad646cc3028049f2a6b6735d43f28243",
+                    "originalPropertyKey": "slidingMenuDirection",
+                    "propertyIndex": 1,
+                    "propertyKey": "slidingMenuDirection",
+                    "pw": {
+                        "displayName": "Sliding Menu Direction",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "list selector",
+                    "value": [
+                        "Right",
+                        "Left"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "No Footer",
+                    "group": "Footer Options",
+                    "kuid": "c724a05e9eda42bfa25b1e7b11d836d0",
+                    "originalPropertyKey": "footerStyle",
+                    "propertyIndex": 1,
+                    "propertyKey": "footerStyle",
+                    "pw": {
+                        "displayName": "Footer Style",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "list selector",
+                    "value": [
+                        "No Footer",
+                        "only Text",
+                        "only Image",
+                        "Image & Text"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Push",
+                    "group": "Transitions",
+                    "kuid": "g7ac589c7e9b41088149fe68a499df13",
+                    "originalPropertyKey": "slidingMenuAnimation",
+                    "propertyIndex": 2,
+                    "propertyKey": "slidingMenuAnimation",
+                    "pw": {
+                        "displayName": "Sliding Menu Transitions",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "list selector",
+                    "value": [
+                        "Reveal",
+                        "Overlay",
+                        "Push",
+                        "Squeeze"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Slide In",
+                    "group": "Transitions",
+                    "kuid": "j8c22ce9b31f4016bd5032d477685dc5",
+                    "originalPropertyKey": "headerAnimation",
+                    "propertyIndex": 3,
+                    "propertyKey": "headerAnimation",
+                    "pw": {
+                        "displayName": "Header Animation",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "list selector",
+                    "value": [
+                        "No Animation",
+                        "Zoom Out",
+                        "Slide In"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Regular",
+                    "group": "Profile Options",
+                    "kuid": "c30c393c2a614bfea5c61bfe2da80c24",
+                    "originalPropertyKey": "profileImageType",
+                    "propertyIndex": 3,
+                    "propertyKey": "profileImageType",
+                    "pw": {
+                        "displayName": "Profile Image Type",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "list selector",
+                    "value": [
+                        "Regular",
+                        "Rounded Corner",
+                        "Circle"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [
+                            {
+                                "menuItemIcon": "visualizerimage_icon.png",
+                                "menuItemName": "Label 1"
+                            },
+                            {
+                                "menuItemIcon": "visualizerimage_icon.png",
+                                "menuItemName": "Label 2"
+                            },
+                            {
+                                "menuItemIcon": "visualizerimage_icon.png",
+                                "menuItemName": "Label 3"
+                            },
+                            {
+                                "menuItemIcon": "visualizerimage_icon.png",
+                                "menuItemName": "Label 4"
+                            },
+                            {
+                                "menuItemIcon": "visualizerimage_icon.png",
+                                "menuItemName": "Label 5"
+                            },
+                            {
+                                "menuItemIcon": "visualizerimage_icon.png",
+                                "menuItemName": "Label 6"
+                            },
+                            {
+                                "menuItemIcon": "visualizerimage_icon.png",
+                                "menuItemName": "Label 7"
+                            }
+                        ],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "Menu Item Name",
+                                "columnHeaderType": "text",
+                                "columnID": "menuItemName",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "f8ade95d4f564430ad3314aa8392f025"
+                            },
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "Menu Item Icon",
+                                "columnHeaderType": "text",
+                                "columnID": "menuItemIcon",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "image",
+                                "kuid": "ed67cd7bd0bb449db2118f45df628dfe"
+                            }
+                        ]
+                    },
+                    "group": "General",
+                    "kuid": "c7ff66d7608f422da37dc7c26d50a648",
+                    "originalPropertyKey": "menuOptions",
+                    "propertyIndex": 4,
+                    "propertyKey": "menuOptions",
+                    "pw": {
+                        "displayName": "Menu options",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "data grid",
+                    "value": 2
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "Menu Item Name",
+                                "columnHeaderType": "text",
+                                "columnID": "menuItemName",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "d40249434d8c4cd1b66e25d797bc5e3c"
+                            },
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "SubMenu Item Name",
+                                "columnHeaderType": "text",
+                                "columnID": "submenuItemName",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "eddf1d51847e41d7842b6d52033db26d"
+                            },
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "SubMenu Item Icon",
+                                "columnHeaderType": "text",
+                                "columnID": "submenuItemIcon",
+                                "columnOnClick": null,
+                                "columnText": "Not Defined",
+                                "columnType": "image",
+                                "kuid": "f4277a24ea5540a9947b130aff8ae77b"
+                            }
+                        ]
+                    },
+                    "group": "General",
+                    "kuid": "a9abca5943f0484a9b0289a6c15479cb",
+                    "originalPropertyKey": "subMenuOptions",
+                    "propertyIndex": 5,
+                    "propertyKey": "subMenuOptions",
+                    "pw": {
+                        "displayName": "Submenu Options",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "data grid",
+                    "value": 3
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "d2496d13f05c46338e46c285154d853c",
+                    "originalPropertyKey": "enableSeparator",
+                    "propertyIndex": 8,
+                    "propertyKey": "enableSeparator",
+                    "pw": {
+                        "displayName": "Enable Separator",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "bb3a941f4333434f9cb306121e95eec3",
+                    "originalPropertyKey": "enableMenuItemAnimation",
+                    "propertyIndex": 9,
+                    "propertyKey": "enableMenuItemAnimation",
+                    "pw": {
+                        "displayName": "Enable Menu Item Animation",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "0.25",
+                    "group": "General",
+                    "kuid": "j10807e9a99c43e7b623c7874eec06f9",
+                    "originalPropertyKey": "animationSpeed",
+                    "propertyIndex": 10,
+                    "propertyKey": "animationSpeed",
+                    "pw": {
+                        "displayName": "Sliding Menu Animation Speed",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "m8e464bb908946d5a8beecad6f314755",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "Profile Options",
+                    "kuid": "f1cd3ff90e764d34b06a94b5ab5a305f",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "profileImageIsVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Profile Image isVisible",
+                        "srcWidget": "flxImage",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "h0a282ca17324c44bb1e95890cf93b09"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cd0b9b1430be4f62a398a5cf4d20e7c9",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "subHeadingSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sub Heading Skin",
+                        "srcWidget": "lblHeaderText2",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e99d670fdded4b11a6cf716304442452"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a676c573e8be44f38877c6e1e2c7ae67",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "menuTextSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Menu Options Text Skin",
+                        "srcWidget": "lblnunito",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ac47f6b021474b7d864476adb7d5a59d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bc701bd6d7714a1cbe1a05d99685a3f3",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "headingSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Heading Skin",
+                        "srcWidget": "lblHeaderText1",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ec61a2b19b2744b39e0c82fed8d9440b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "ic46e4006e45406bb06adf59c4f27ae9",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "headingTextIsVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Heading Text isVisible",
+                        "srcWidget": "lblHeaderText1",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ec61a2b19b2744b39e0c82fed8d9440b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c18ccafe89e048b5839bd8650535eb96",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "slidingMenuSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sliding Menu Skin",
+                        "srcWidget": "flxMainSlidingMenu",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ee2f361ec6024cc48e36ce11a55799f1"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ddf4e59bf23e45928ca499488581b43c",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 2,
+                    "propertyKey": "slidingMenuVisibility",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sliding Menu Visibility",
+                        "srcWidget": "flxMainSlidingMenu",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ee2f361ec6024cc48e36ce11a55799f1"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Footer Options",
+                    "kuid": "bd077059d539432f8f72f927a7cde6c7",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 2,
+                    "propertyKey": "footerTextSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Footer Text Skin",
+                        "srcWidget": "textFooter",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d58f21c09ac64c1b967f499ebc2d6ce0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "a7d0d2c430d6483b82b76c52e28e31b1",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "headingText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Heading Text",
+                        "srcWidget": "lblHeaderText1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ec61a2b19b2744b39e0c82fed8d9440b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Profile Options",
+                    "kuid": "e93183ed96be4307b2e77fcd27966a40",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 2,
+                    "propertyKey": "profileImageSrc",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Profile Image Source",
+                        "srcWidget": "imgHeader",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "jffda2b4b50749ff95a9afc729307330"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Footer Options",
+                    "kuid": "e166e2d498b34a7fbfea3941e4363aad",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "footerText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Footer text",
+                        "srcWidget": "textFooter",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d58f21c09ac64c1b967f499ebc2d6ce0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "aa775aff81f544039631c452ac3d51ca",
+                    "originalPropertyKey": "left",
+                    "propertyIndex": 3,
+                    "propertyKey": "headingLeft",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Heading Left",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "lblHeaderText1",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ec61a2b19b2744b39e0c82fed8d9440b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "edf1263615a047b499af39d82c6639e3",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 3,
+                    "propertyKey": "slidingMenuIcon",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sliding Menu Icon",
+                        "srcWidget": "imgHamIcon",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "df9c355ee2ad48d09338cac2f4e4f0bf"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Profile Options",
+                    "kuid": "b34d1ad913c74672b2e779448220d398",
+                    "originalPropertyKey": "left",
+                    "propertyIndex": 4,
+                    "propertyKey": "profileImageLeft",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Profile Image Left",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "flxImage",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "h0a282ca17324c44bb1e95890cf93b09"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "cb9892b8e9304aaa96bc46159385cb21",
+                    "originalPropertyKey": "top",
+                    "propertyIndex": 4,
+                    "propertyKey": "headingTop",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Heading Top",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "lblHeaderText1",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ec61a2b19b2744b39e0c82fed8d9440b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Footer Options",
+                    "kuid": "be741ba4a4504788aa4c8f80c7de6100",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 4,
+                    "propertyKey": "footerImageSrc",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Footer Image Source",
+                        "srcWidget": "imgFooter",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ef7bf921185144929a80e4adbca28a58"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "ccc8c54674de4e789c49400b5165d2bb",
+                    "originalPropertyKey": "width",
+                    "propertyIndex": 5,
+                    "propertyKey": "headingWidth",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Heading Width",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "lblHeaderText1",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ec61a2b19b2744b39e0c82fed8d9440b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Footer Options",
+                    "kuid": "f974d40a60154a40aaa7d3a267264b2d",
+                    "originalPropertyKey": "width",
+                    "propertyIndex": 5,
+                    "propertyKey": "footerImageWidth",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Footer Image Width",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "imgFooter",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ef7bf921185144929a80e4adbca28a58"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Profile Options",
+                    "kuid": "b3ca2f829bdb4e5bafaf1dcb7796a2cc",
+                    "originalPropertyKey": "top",
+                    "propertyIndex": 5,
+                    "propertyKey": "profileImageTop",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Profile Image Top",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "flxImage",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "h0a282ca17324c44bb1e95890cf93b09"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c4f713e701c24a03a5aa138c7eef4ddd",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 6,
+                    "propertyKey": "enableHeader",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Enable Header ",
+                        "srcWidget": "flxHeader",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "f87c553438dc433d8339ef08642f021f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "a30972272262471d8ace74358091cc63",
+                    "originalPropertyKey": "height",
+                    "propertyIndex": 6,
+                    "propertyKey": "headingHeight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Heading Height",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "lblHeaderText1",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ec61a2b19b2744b39e0c82fed8d9440b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Profile Options",
+                    "kuid": "b774c66a93a14d0dae5e5360ca20f821",
+                    "originalPropertyKey": "width",
+                    "propertyIndex": 6,
+                    "propertyKey": "profileImageWidth",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Profile Image Width",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "flxImage",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "h0a282ca17324c44bb1e95890cf93b09"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Footer Options",
+                    "kuid": "fc902d9dda6d466e851850c1db515577",
+                    "originalPropertyKey": "height",
+                    "propertyIndex": 6,
+                    "propertyKey": "footerImageHeight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Footer Image Height",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "imgFooter",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ef7bf921185144929a80e4adbca28a58"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f048839560a84336b3dd9dd7b5a09424",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 7,
+                    "propertyKey": "placeholderVisibility",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "PlaceHolder Visibility",
+                        "srcWidget": "lblContent",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a602185cb0be4c428f89335b883cf838"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "d852c95b4f764471a089fbb706f64e7c",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 7,
+                    "propertyKey": "subHeadingTextIsVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sub Heading Text isVisible",
+                        "srcWidget": "lblHeaderText2",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e99d670fdded4b11a6cf716304442452"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Profile Options",
+                    "kuid": "gb96fab9a2244291b684ab11f26f67dc",
+                    "originalPropertyKey": "height",
+                    "propertyIndex": 7,
+                    "propertyKey": "profileImageHeight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Profile Image Height",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "flxImage",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "h0a282ca17324c44bb1e95890cf93b09"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "e7fc95ed14bf40ccaf62812fcf3efb76",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 8,
+                    "propertyKey": "subHeadingText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sub Heading Text",
+                        "srcWidget": "lblHeaderText2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e99d670fdded4b11a6cf716304442452"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "e6e1cb81acc9495ab1554874f0bad7bb",
+                    "originalPropertyKey": "left",
+                    "propertyIndex": 9,
+                    "propertyKey": "subHeadingLeft",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sub Heading Left",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "lblHeaderText2",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e99d670fdded4b11a6cf716304442452"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "e60b68ce220f4982ad3818bf8d92cd3d",
+                    "originalPropertyKey": "top",
+                    "propertyIndex": 10,
+                    "propertyKey": "subHeadingTop",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sub Heading Top ",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "lblHeaderText2",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e99d670fdded4b11a6cf716304442452"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "b80f007c326e4ec098c2a4bbae68c188",
+                    "originalPropertyKey": "width",
+                    "propertyIndex": 11,
+                    "propertyKey": "subHeadingWidth",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sub Heading Width",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "lblHeaderText2",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e99d670fdded4b11a6cf716304442452"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Headings",
+                    "kuid": "d17b3e95ce884d4bafcb1e749c639d47",
+                    "originalPropertyKey": "height",
+                    "propertyIndex": 12,
+                    "propertyKey": "subHeadingHeight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sub Heading Height",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spaip",
+                                "spaan",
+                                "spawinphone8",
+                                "spabb"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spaipad",
+                                "spaandroidtablet",
+                                "spawindowstablet"
+                            ]
+                        },
+                        "srcWidget": "lblHeaderText2",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e99d670fdded4b11a6cf716304442452"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "a97e39e5991742d79f8a442a4e48d34b",
+                    "propertyKey": "flxTargetContainer",
+                    "srcWgtKUID": "f02081ed7f6644c7ab14e7762a1e3e67"
+                }
+            ],
+            "passthrough": [
+                {
+                    "kuid": "ga3b733cd6204e08ac6623968b2ecdff",
+                    "propertyKey": "flxTargetContainer",
+                    "srcWgtKUID": "f02081ed7f6644c7ab14e7762a1e3e67"
+                }
+            ]
+        }
+    },
+    "namespace": "com.konymp",
+    "version": "1.0.0"
+}

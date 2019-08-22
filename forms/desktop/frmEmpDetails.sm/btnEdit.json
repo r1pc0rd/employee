@@ -1,0 +1,93 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "331dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "s3d64eda91204b6bb4beda129a006009",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "22dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s5de8f13d09b4c6b9cbf0debe040e4a7",
+    "id": "btnEdit",
+    "ide_onClick": "AS_Button_g7d68fc5faa140039a83143173f0d621",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c323a2b6cf2241c6b76012e764641af1",
+    "name": "kony.ui.Button",
+    "onclick": "AS_Button_g7d68fc5faa140039a83143173f0d621",
+    "parent": "flxViewProfileHeader",
+    "pf": "frmEmpDetails",
+    "responsiveData": {
+        "b5": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "focusSkin": "s3d64eda91204b6bb4beda129a006009",
+            "height": {
+                "type": "string",
+                "value": "20px"
+            },
+            "left": {
+                "type": "string",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": "70px"
+            },
+            "skin": "s3d64eda91204b6bb4beda129a006009",
+            "text": "Edit",
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "40px"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}
