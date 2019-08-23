@@ -28,7 +28,7 @@ define({
     showLoadingScreen(this.view);
     var sdkInstance = new kony.sdk.getCurrentInstance();
     try{
-      var  userStoreAuth = sdkInstance.getIdentityService("userstore");
+      var  userStoreAuth = sdkInstance.getIdentityService("test");
       var userCred = {
         "userid" : username,
         "password" : password
