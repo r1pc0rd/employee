@@ -1,0 +1,25 @@
+{
+  "subType" : "customapp",
+  "description" : "EmpDirTrev",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "fetchImageService",
+    "version" : "1.0",
+    "etag" : "7a63969d-a4f7-4cf3-8a3b-c6de04953f12"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "EmployeeStorageObjects",
+    "version" : "1.0",
+    "etag" : "e08f1072-1b07-4ad0-b015-6acb77998e02"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "EmployeeModelSchema",
+    "version" : "1.0",
+    "etag" : "d9aa3591-c0b4-4704-a27b-da8970a873cc"
+  }, {
+    "name" : "StorageObjectServices",
+    "version" : "1.0",
+    "etag" : "b1bf803c-3246-4b00-b87b-804600ec2a18"
+  } ],
+  "identity" : [ "userstore", "reusableLinkedinLogin", "reusableFacebookLogin", "reusableOffice365Login", "MicrosoftActiveDirectory", "test" ]
+}

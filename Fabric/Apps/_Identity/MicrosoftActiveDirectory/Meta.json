@@ -1,0 +1,14 @@
+{
+  "name" : "MicrosoftActiveDirectory",
+  "displayName" : "MicrosoftActiveDirectory",
+  "type" : "konyads",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"ad_configs\":[{\"url\":\"ldap://54.88.153.204:389\",\"domain\":\"DC=samples,DC=kony,DC=com\",\"userid\":\"userPrincipalName\",\"context\":\"\",\"name\":\"samples\",\"loginattribute\":\"userPrincipalName\",\"fullname\":\"cn\",\"firstname\":\"givenName\",\"lastname\":\"sn\",\"email\":\"mail\",\"profileurl\":\"profilePath\",\"displayname\":\"displayName\",\"customProfileAttributes\":{}}],\"config_version\":\"v2\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "ssoenabled" : false
+}

@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "Employee",
+  "targetObject" : "Contact",
+  "relationshipKeys" : [ {
+    "sourceField" : "Employee_id",
+    "targetField" : "employee_id",
+    "etag" : "ef3d3c48-25cb-4872-825f-e06789cb2e3c"
+  } ],
+  "name" : "Employee_Contact",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : true
+} ]

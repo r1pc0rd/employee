@@ -292,10 +292,10 @@
     "certs_trust_store_pwd": "kds/0eUc+i3BqFqSkpCk4g==",
     "certs_trust_store_type": "JKS",
     "chat": "false",
-    "cloud_account_guid": "07d0fce3-809b-446f-a53c-5dba0a60fa24",
+    "cloud_account_guid": "40c2296d-edf1-49e0-8835-3d0dd691f0d2",
     "cloud_account_id": "100000010",
     "cloud_config_ipaddress_list": "",
-    "cloud_env_GUID": "06cedadd-8c31-48a3-9732-a5b73c2dcfb3",
+    "cloud_env_GUID": "658df454-7d64-4ed8-a522-4c4d4e2a2a71",
     "cloud_env_name": "Sync Team-M100000010002",
     "cloud_http_redirect": "false",
     "cloud_selected_ipaddress_list": "",
@@ -438,12 +438,6 @@
             "id": "a8c40309-3f86-4a18-868c-175e30b4e9b4",
             "version": "1.0"
         },
-        "07d0fce3-809b-446f-a53c-5dba0a60fa24": {
-            "appName": "TrevathanEmpDir",
-            "baseId": "188fb732-efce-4052-9b6f-82e02643a6e4",
-            "id": "188fb732-efce-4052-9b6f-82e02643a6e4",
-            "version": "1.0"
-        },
         "18c6d19f-53c9-46d4-a90a-5dbc69cc37c0": {
             "baseId": "b37ec232-9f95-468f-a80b-373307282e06",
             "id": "b37ec232-9f95-468f-a80b-373307282e06",
@@ -453,6 +447,12 @@
             "appName": "EmployeeDirectory",
             "baseId": "f394b2d5-7915-4d71-866f-c2c201ee22aa",
             "id": "f394b2d5-7915-4d71-866f-c2c201ee22aa",
+            "version": "1.0"
+        },
+        "40c2296d-edf1-49e0-8835-3d0dd691f0d2": {
+            "appName": "EmpDirTrev",
+            "baseId": "aa54413b-9a30-4d6e-8e3a-c71239f68dfb",
+            "id": "aa54413b-9a30-4d6e-8e3a-c71239f68dfb",
             "version": "1.0"
         },
         "485b717a-e243-4e17-ab6f-36c31a9c398f": {
