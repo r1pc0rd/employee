@@ -68,6 +68,11 @@ define({
         var self = this;
         this.view.forceLayout();
     },
+    /** onClick defined for DirectoryMenuItemMouseover **/
+    AS_FlexContainer_d1fb2ab8b8f94128913da5ec9205e531: function AS_FlexContainer_d1fb2ab8b8f94128913da5ec9205e531(eventobject) {
+        var self = this;
+        this.navigateToFrmEmpList();
+    },
     /** onClick defined for SettingsMenu **/
     AS_FlexContainer_ec998c0f4ad54fe5893c6aed47e65bf3: function AS_FlexContainer_ec998c0f4ad54fe5893c6aed47e65bf3(eventobject) {
         var self = this;
@@ -104,6 +109,11 @@ define({
     AS_FlexContainer_ae2bb3a1207f4803b183e5b6bd38b982: function AS_FlexContainer_ae2bb3a1207f4803b183e5b6bd38b982(eventobject) {
         var self = this;
         this.view.flxOverlay.setVisibility(false);
+    },
+    /** onAlertFlexClick defined for alertmsg **/
+    AS_UWI_c461c3cbdfc141278c12f02d116ae401: function AS_UWI_c461c3cbdfc141278c12f02d116ae401() {
+        var self = this;
+        this.hideALertComponentCallBack();
     },
     /** onClick defined for flxAlertContainer2 **/
     AS_FlexContainer_c11c871d7c4a44ae929b042361d7b1b7: function AS_FlexContainer_c11c871d7c4a44ae929b042361d7b1b7(eventobject) {

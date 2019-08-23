@@ -44,7 +44,6 @@
         "passwordPlaceholder": "Password",
         "providerName": "userstore",
         "socialLoginVisible": false,
-        "submitOnClick": "AS_UWI_b05e79e69d7243e09772ee206cd77ff3",
         "usernamePlaceholder": "Username"
     },
     "id": "login",

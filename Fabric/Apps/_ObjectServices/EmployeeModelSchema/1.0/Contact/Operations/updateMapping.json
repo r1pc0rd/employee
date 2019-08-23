@@ -14,6 +14,7 @@
     "applyResponseCommonMapping" : true,
     "opcode" : "update",
     "relationshipHierarchyMapping" : {
+      "children" : [ ],
       "name" : "Contact",
       "actions" : {
         "create" : true,

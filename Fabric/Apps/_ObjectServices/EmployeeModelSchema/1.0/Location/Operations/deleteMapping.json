@@ -18,6 +18,7 @@
         "actionsAllSelected" : false,
         "children" : [ {
           "actionsAllSelected" : false,
+          "children" : [ ],
           "name" : "Contact",
           "actions" : {
             "delete" : false

@@ -23,9 +23,7 @@
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true,
-            "package": "",
-            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"j51f277164cb482b81325ebeb8f748d3\"\n    }\n}",
-            "isCustomInput": false
+            "package": ""
         }]
     }
 }

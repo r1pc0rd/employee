@@ -1,0 +1,21 @@
+{
+  "subType" : "customapp",
+  "description" : "EmployeeDirectory",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "fetchImageService",
+    "version" : "1.0"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "EmployeeStorageObjects",
+    "version" : "1.0"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "EmployeeModelSchema",
+    "version" : "1.0"
+  }, {
+    "name" : "StorageObjectServices",
+    "version" : "1.0"
+  } ],
+  "identity" : [ "userstore", "reusableLinkedinLogin", "reusableFacebookLogin", "reusableOffice365Login", "MicrosoftActiveDirectory" ]
+}

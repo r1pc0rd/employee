@@ -10,6 +10,8 @@
     "delete" : "deleteMapping"
   },
   "entityProperties" : {
-    "UniquePrefixId" : "d6424006-e9f0-49c9-b247-ee7eab40ef11"
+    "UniquePrefixId" : "d6424006-e9f0-49c9-b247-ee7eab40ef11",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
   }
 }

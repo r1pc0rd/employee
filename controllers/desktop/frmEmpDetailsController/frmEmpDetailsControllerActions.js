@@ -2,6 +2,12 @@ define({
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
+    /** onClick defined for DirectoryMenuItemMouseover **/
+    AS_FlexContainer_af9b92edea594f6ebd51d02273df024b: function AS_FlexContainer_af9b92edea594f6ebd51d02273df024b(eventobject) {
+        var self = this;
+        var ntf = new kony.mvc.Navigation("frmEmpList");
+        ntf.navigate();
+    },
     /** onClick defined for SettingsMenu **/
     AS_FlexContainer_bc7c86f86f9e40c7aac552e1160a9816: function AS_FlexContainer_bc7c86f86f9e40c7aac552e1160a9816(eventobject) {
         var self = this;
@@ -31,6 +37,16 @@ define({
     AS_FlexContainer_c752f79ba4d9490db0559e601134131e: function AS_FlexContainer_c752f79ba4d9490db0559e601134131e(eventobject) {
         var self = this;
         return self.animateLeftMenu.call(this);
+    },
+    /** onClick defined for btnEdiSaveBottom **/
+    AS_Button_acda5789137445ab8ca71f23a1c26842: function AS_Button_acda5789137445ab8ca71f23a1c26842(eventobject) {
+        var self = this;
+        this.processSaveOrEditButton();
+    },
+    /** onClick defined for flxEditSave **/
+    AS_FlexContainer_g95363b8bca440fba8c99a9559552407: function AS_FlexContainer_g95363b8bca440fba8c99a9559552407(eventobject) {
+        var self = this;
+        return self.processSaveOrEditButton.call(this);
     },
     /** onClick defined for flxCloseDetails **/
     AS_FlexContainer_e6b995af4c0d464cb982413eefeadf49: function AS_FlexContainer_e6b995af4c0d464cb982413eefeadf49(eventobject) {
@@ -75,6 +91,11 @@ define({
     AS_FlexContainer_hdb2384aecd343e5b59944a15403dc35: function AS_FlexContainer_hdb2384aecd343e5b59944a15403dc35(eventobject) {
         var self = this;
         this.view.flxOverlay.setVisibility(false);
+    },
+    /** onAlertFlexClick defined for alertmsg **/
+    AS_UWI_j026c7d502e743ff87894936e1be76c9: function AS_UWI_j026c7d502e743ff87894936e1be76c9() {
+        var self = this;
+        this.hideALertComponentCallBack();
     },
     /** onClick defined for flxAlertContainer **/
     AS_FlexContainer_a5f3ee6c3fba4645a931e6fc41cb0e38: function AS_FlexContainer_a5f3ee6c3fba4645a931e6fc41cb0e38(eventobject) {

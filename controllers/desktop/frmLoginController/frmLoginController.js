@@ -17,7 +17,7 @@ define({
      * @param {String - password} - password entered in password text box
 	 **/
   doUserStoreLogin : function(username,password){
-   // debugger;
+    debugger;
     username=this.view.txtUser.text;
     password=this.view.txtPassWord.text;
     this.userEmail=username;
@@ -28,7 +28,7 @@ define({
     showLoadingScreen(this.view);
     var sdkInstance = new kony.sdk.getCurrentInstance();
     try{
-      var  userStoreAuth = sdkInstance.getIdentityService("test");
+      var  userStoreAuth = sdkInstance.getIdentityService("userstore");
       var userCred = {
         "userid" : username,
         "password" : password
@@ -43,7 +43,7 @@ define({
     }
   },
   userFetchSuccess:function(result){
-   // debugger;
+    debugger;
     if(result!==undefined && result.groups!==undefined){
       var groupLength=result.groups.length;
       for(i=0;i<groupLength;i++){

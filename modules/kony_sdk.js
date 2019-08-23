@@ -1500,7 +1500,6 @@ kony.sdk.constants =
         DISABLE_INTEGRITY : "disableIntegrity",
         PASSTHROUGH : "passthrough",
         BINARY_DATATYPE : "binary",
-        JSON_DATA : "jsondata",
 
         /** License Constants **/
         LICENSE_SESSION_TIMEOUT_IN_MILLIS : 14400000,
@@ -2295,78 +2294,6 @@ function IdentityService(konyRef, rec) {
 		}
 	};
 
-	/**
-	 * validateMfa validates the multi factor authentication parameters
-	 * @param {object} mfaParams- 2nd factor authentic param
-	 * @param {function} successCallback  - Callback method on success
-	 * @param {function} failureCallback - Callback method on failure
-	 */
-	this.validateMfa = function (mfaParams, successCallback, failureCallback, options) {
-		kony.sdk.logsdk.debug("AuthService::validateMfa Invoked login for provider " + _providerName + " of type " + _type);
-
-		function performValidateCall(urlMFA, params) {
-			var headers = {};
-			headers[kony.sdk.constants.KONY_AUTHORIZATION_HEADER] = konyRef.currentClaimToken;
-			headers[kony.sdk.constants.APP_KEY_HEADER] = mainRef.appKey;
-			headers[kony.sdk.constants.APP_SECRET_HEADER] = mainRef.appSecret;
-			headers[kony.sdk.constants.SDK_TYPE_HEADER] = kony.sdk.getSdkType();
-			headers[kony.sdk.constants.SDK_VERSION_HEADER] = kony.sdk.version;
-			headers[kony.sdk.constants.PLATFORM_TYPE_HEADER] = kony.sdk.getPlatformName();
-			headers[kony.sdk.constants.HTTP_REQUEST_HEADER_ACCEPT] = kony.sdk.constants.CONTENT_TYPE_JSON;
-			headers[kony.sdk.constants.HTTP_CONTENT_HEADER] = kony.sdk.constants.CONTENT_TYPE_FORM_URL_ENCODED;
-			populateHeaderWithFabricAppVersion(headers);
-			if (konyRef.reportingheaders_allowed) {
-				headers[kony.sdk.constants.REPORTING_HEADER] = kony.sdk.getEncodedReportingParamsForSvcid("login_" + _providerName);
-			}
-			var endPointUrl = _serviceUrl + urlMFA + "?provider=" + _providerName;
-			var networkOptions = kony.sdk.util.checkAndFetchNetworkProviderOptions(options);
-			networkProvider.post(endPointUrl, params, headers,
-				function (data) {
-					var response = processLoginSuccessResponse(data, konyRef, false);
-					kony.sdk.verifyAndCallClosure(successCallback, response);
-				},
-				function (data) {
-					processLoginErrorResponse(data, konyRef, true, failureCallback)
-				}, null, networkOptions);
-		}
-
-		if (kony.sdk.isNullOrUndefined(mfaParams)) {
-			throw new Exception(kony.sdk.errorConstants.AUTH_FAILURE, " mfaParams are null");
-		}
-		var payload = {};
-		payload["provider"] = _providerName;
-		for (var key in mfaParams) {
-			payload[key] = mfaParams[key];
-		}
-		if (!kony.sdk.isNullOrUndefined(konyRef.currentClaimToken) && !konyRef.isAnonymousProvider) {
-			kony.sdk.claimsRefresh(function (res) {
-				performValidateCall("/login/MFA", payload)
-			}, function (err) {
-				kony.sdk.logsdk.error("AuthService::validateMfa claimsRefresh failed, invoking failurecallback");
-				err.message = kony.sdk.errormessages.transient_login_fail;
-				err.opstatus = kony.sdk.errorcodes.transient_login_fail;
-				kony.sdk.verifyAndCallClosure(failureCallback, err);
-			})
-		} else {
-			kony.sdk.logsdk.error("AuthService::validateMfa Claims token unavailable, please login");
-			err.message = kony.sdk.errormessages.offline_auth_failed;
-			err.opstatus = kony.sdk.errorcodes.offline_auth_failedl;
-			kony.sdk.verifyAndCallClosure(failureCallback, err);
-		}
-	};
-
-	/**
-	 * getMfaDetails functions lets the user to know whether 2factor security is enabled
-	 * @return {boolean}
-	 **/
-
-	this.getMfaDetails = function () {
-		var mfaDetails = {};
-		mfaDetails[kony.sdk.constants.IS_MFA_ENABLED] = is_mfa_enabled;
-		mfaDetails[kony.sdk.constants.MFA_META] = mfa_meta;
-		return mfaDetails;
-	};
-
     //#ifdef PLATFORM_NATIVE_ANDROID_IOS
     /**
      * Tries to get persisted token from local store and update sdk.
@@ -2424,20 +2351,6 @@ function IdentityService(konyRef, rec) {
 		konyRef.currentClaimToken = data.claims_token.value;
 		konyRef.claimTokenExpiry = data.claims_token.exp;
 		konyRef.currentRefreshToken = data.refresh_token;
-
-		if (!konyRef.isAnonymousProvider && !kony.sdk.isNullOrUndefined(data.claims_token[kony.sdk.constants.IS_MFA_ENABLED])) {
-			for (var providerPosition = 0; providerPosition < konyRef.login.length; providerPosition++) {
-				if (konyRef.login[providerPosition].prov === providerName) {
-					//we are doing this so that if user makes anoher identity object with same provider , is_mfa_enabled value can be available
-					konyRef.login[providerPosition][kony.sdk.constants.IS_MFA_ENABLED] = data.claims_token[kony.sdk.constants.IS_MFA_ENABLED];
-					konyRef.login[providerPosition][kony.sdk.constants.MFA_META] = data.claims_token[kony.sdk.constants.MFA_META];
-					var result = {};
-					result[kony.sdk.constants.IS_MFA_ENABLED] = data.claims_token[kony.sdk.constants.IS_MFA_ENABLED];
-					result[kony.sdk.constants.MFA_META] = data.claims_token[kony.sdk.constants.MFA_META];
-					return result;
-				}
-			}
-		}
 	};
 
     var processLoginSuccessResponse = function(data,konyRef,isAsync,callBack){
@@ -4516,7 +4429,7 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName, serviceInfo) {
             }
         }
 
-        var formData = new kony.sdk.getFormData(record);
+        var formData = new kony.sdk.getFormData(record, null);
 
         if(queryParams != undefined && queryParams != null) {
             kony.sdk.updateFormData(formData, "queryparams", queryParams);
@@ -4622,7 +4535,7 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName, serviceInfo) {
         }
 
         headers["X-HTTP-Method-Override"] = "PUT";
-        var formData = new kony.sdk.getFormData(dataObject.getRecord());
+        var formData = new kony.sdk.getFormData(dataObject.getRecord(), null);
 
         if(queryParams != undefined && queryParams != null) {
             kony.sdk.updateFormData(formData, "queryparams", queryParams);
@@ -4667,7 +4580,7 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName, serviceInfo) {
             }
         }
 
-        var formData = new kony.sdk.getFormData(dataObject.getRecord());
+        var formData = new kony.sdk.getFormData(dataObject.getRecord(), null);
 
         if(queryParams != undefined && queryParams != null) {
             kony.sdk.updateFormData(formData, "queryparams", queryParams);
@@ -4779,7 +4692,7 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName, serviceInfo) {
             }
         }
 
-        var formData = new kony.sdk.getFormData(dataObject.getRecord());
+        var formData = new kony.sdk.getFormData(dataObject.getRecord(), null);
 
         if(queryParams != undefined && queryParams != null) {
             kony.sdk.updateFormData(formData, "queryparams", queryParams);
@@ -16137,7 +16050,7 @@ function getDeviceIdForIOSPlatform() {
 //Helps to prepare the input wrapped into kony.net.FormData
 kony.sdk.getFormData = function(payload) {
     var formData = new kony.net.FormData();
-    formData.append(kony.sdk.constants.JSON_DATA, JSON.stringify(payload));
+    formData.append("jsondata", JSON.stringify(payload));
 
     return formData;
 };

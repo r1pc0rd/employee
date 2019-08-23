@@ -23,9 +23,7 @@
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true,
-            "package": "",
-            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"flxCloseEditMode\"\n    }\n}",
-            "isCustomInput": false
+            "package": ""
         }]
     }
 }

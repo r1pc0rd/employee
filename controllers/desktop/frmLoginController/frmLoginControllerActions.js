@@ -25,5 +25,9 @@ define({
     AS_Button_h6db9ecbd776435ea976fd9cc7c0e167: function AS_Button_h6db9ecbd776435ea976fd9cc7c0e167(eventobject) {
         var self = this;
         this.doUserStoreLogin(this.view.txtUser.text, this.view.txtPassWord.text);
+    },
+    /** init defined for frmLogin **/
+    AS_Form_g04837b3351e4f77b7068d625f15c457: function AS_Form_g04837b3351e4f77b7068d625f15c457(eventobject) {
+        var self = this;
     }
 });

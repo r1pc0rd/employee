@@ -16,6 +16,7 @@
     "relationshipHierarchyMapping" : {
       "children" : [ {
         "actionsAllSelected" : false,
+        "children" : [ ],
         "name" : "Contact",
         "actions" : {
           "delete" : false

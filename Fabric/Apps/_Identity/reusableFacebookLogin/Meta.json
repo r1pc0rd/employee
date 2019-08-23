@@ -4,7 +4,7 @@
   "type" : "facebook",
   "version" : "1.0",
   "metaPreference" : -1,
-  "config" : "{\"scope\":\"email\",\"callback\":\"https://100000015.auth.sit2-konycloud.com/oauth2/callback\",\"client_secret\":\"7b9e696979b4344a9dac154ab4e6bd30\",\"client_id\":\"130251220315936\",\"url\":\"https://graph.facebook.com\"}",
+  "config" : "{\"scope\":\"email\",\"callback\":\"https://100000010.auth.sit2-konycloud.com/oauth2/callback\",\"client_secret\":\"7b9e696979b4344a9dac154ab4e6bd30\",\"client_id\":\"130251220315936\",\"url\":\"https://graph.facebook.com\"}",
   "policyConfig" : "{\"max_login_fail\":5,\"def_user_status\":\"pending\"}",
   "admissionPolicy" : "no_approval_needed",
   "identityMeta" : {
