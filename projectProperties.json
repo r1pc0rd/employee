@@ -312,7 +312,7 @@
     },
     "createdVizVersion": "8.2.0",
     "createdgaversion": "8.2.0",
-    "currentgaversion": "8.4.25",
+    "currentgaversion": "8.4.32",
     "deeplinkkey": "None",
     "defaultlocalekey": "en_US",
     "defaulttheme": "EmployeeDirectory",
@@ -507,7 +507,7 @@
             "version": "1.0"
         }
     },
-    "konyVizVersion": "8.4.25",
+    "konyVizVersion": "8.4.32",
     "lastmodifiedtime": "1544014440306",
     "location": "false",
     "log_level": "ERROR",
