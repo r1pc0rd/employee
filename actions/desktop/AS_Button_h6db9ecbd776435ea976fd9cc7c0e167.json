@@ -18,7 +18,21 @@
             "type": "ADD_SNIPPET",
             "codeSnippet": "this.doUserStoreLogin(this.view.txtUser.text,this.view.txtPassWord.text);",
             "parentId": null,
-            "callbackType": null
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "NAVIGATE_TO_FORM___fbd9b4fad77f44c28685688c0c77aacb",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmEmpList",
+            "formKUID": "b14b0e33877349078c917130e12fc60f",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"btnSubmit\"\n    }\n}",
+            "isCustomInput": false
         }]
     }
 }

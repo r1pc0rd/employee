@@ -1,5 +1,3 @@
-//release/tool
-//ver 1.6.2
 ;
 (function() {
     var BusinessController_Command, BusinessController_CommandResponse, BusinessController_CommandHandler, commonUtils_ExtensibilityApi, BusinessController_CommandExecutionEngine, BusinessController_BusinessController, BusinessController_BusinessDelegator, DataModel_QueryBuilder, DataModel_constants, DataModel_Error, DataModel_DBAssembler, DataModel_DataSource, DataModel_BaseRepository, DataModel_RepositoryManager, PresentationController_MDABasePresenter, BaseNavigator_MDABaseNavigator, ModuleManager_MDAModule, ModuleManager_MDAModuleManager, UIBinder_UIBinder, UIBinder_PropertyDataMapper_GenericProperties, UIBinder_WidgetDataMapper_WidgetDataMapper, commonUtils_inheritsFrom, UIBinder_PropertyDataMapper_ImageProperties, UIBinder_WidgetDataMapper_ImageWidgetDataMapper, UIBinder_PropertyDataMapper_TextboxProperties, UIBinder_WidgetDataMapper_TextboxWidgetDataMapper, UIBinder_PropertyDataMapper_LabelProperties, UIBinder_WidgetDataMapper_LabelWidgetDataMapper, UIBinder_PropertyDataMapper_TextAreaProperties, UIBinder_WidgetDataMapper_TextAreaWidgetDataMapper, UIBinder_PropertyDataMapper_SwitchProperties, UIBinder_WidgetDataMapper_SwitchWidgetDataMapper, UIBinder_PropertyDataMapper_SliderProperties, UIBinder_WidgetDataMapper_SliderWidgetDataMapper, UIBinder_PropertyDataMapper_RichTextProperties, UIBinder_WidgetDataMapper_RichTextWidgetDataMapper, UIBinder_PropertyDataMapper_ButtonProperties, UIBinder_WidgetDataMapper_ButtonWidgetDataMapper, UIBinder_WidgetDataMapper_SegmentWidgetDataMapper, UIBinder_PropertyDataMapper_ListboxProperties, UIBinder_WidgetDataMapper_ListboxWidgetDataMapper, UIBinder_WidgetDataMapper_FlexContainerWidgetDataMapper, UIBinder_PropertyDataMapper_CalendarProperties, UIBinder_WidgetDataMapper_CalendarWidgetDataMapper, UIBinder_UIBinderBuilder, commonUtils_MDAApplication, commonUtils_Logger, commonUtils_InitializeForms, commonUtils_ProcessorUtils, ParallelCommandExecuter_ParallelCommandExecuter, DataModel_ModelRelation, DataModel_BaseModel, DataModel_ORMSession, DataModel_Expression, FormController_MDAFormController, commonUtils_ControllerGetterAPI, main, konymvcMDAFormController, kony_mvc_MDAFormController, MDAFormController;
@@ -1011,7 +1009,8 @@
         MF_CONFIG_STRING: '_MF_Config',
         FORM_CONTROLLER_TYPE: 'kony.mvc.MDAFormController',
         HTTP_REQUEST_OPTIONS: 'httpRequestOptions',
-        XML_REQUEST_OPTIONS: 'xmlHttpRequestOptions'
+        XML_REQUEST_OPTIONS: 'xmlHttpRequestOptions',
+        PASSTHROUGH: 'passthrough'
     };
     DataModel_Error = function() {
         //error object
@@ -1125,6 +1124,20 @@
     DataModel_DataSource = function(QueryBuilder, constants, DBAssembler) {
         DataSource = function() {};
         /**
+         * adds passthrough property in network options if provided.
+         * @param options json containing data.
+         */
+        function getPassthrough(options) {
+            var result = {};
+            if (options) {
+                if (options[constants.PASSTHROUGH] === true) {
+                    result[constants.PASSTHROUGH] = true;
+                }
+                delete options[constants.PASSTHROUGH];
+            }
+            return result;
+        }
+        /**
          * @function getByPrimaryKey  fetches data for the specified model based on the primary keys
          * @param  {BaseModel} BaseModel model defination
          * @param  {Json} config      config of corresponding model
@@ -1174,10 +1187,11 @@
             for (var headKey in headerParams) {
                 headers[headKey] = headerParams[headKey];
             }
+            //Adds passthrough to options if provided by user else initializes it with empty json.
+            var options = getPassthrough(dtoOptions);
             var dataObject = new kony.sdk.dto.DataObject(config.tableName);
             DataSource.prototype.addOptionsToDTO(dataObject, dtoOptions);
             var odataQueryFlag = kony.mvc.MDAApplication.getSharedInstance().getODataStatus();
-            var options = {};
             if (odataQueryFlag) {
                 var queryBuilder = new QueryBuilder();
                 var odataQuery = queryBuilder.constructPrimaryKeyODataQuery(primaykeyobj);
@@ -1249,12 +1263,13 @@
             for (var headKey in headerParams) {
                 headers[headKey] = headerParams[headKey];
             }
+            //Adds passthrough to options if provided by user else initializes it with empty json.
+            var options = getPassthrough(dtoOptions);
             var dataObject = new kony.sdk.dto.DataObject(config.tableName);
             DataSource.prototype.addOptionsToDTO(dataObject, dtoOptions);
             for (var key in params) {
                 dataObject.addField(key, params[key]);
             }
-            var options = {};
             options[constants.DATA_OBJECT] = dataObject;
             options[constants.HEADERS_STRING] = headers;
             var httpOptions = kony.mvc.MDAApplication.getSharedInstance().appContext.httpRequestOptions;
@@ -1387,9 +1402,10 @@
                 for (var headKey in headerParams) {
                     headers[headKey] = headerParams[headKey];
                 }
+                //Adds passthrough to options if provided by user else initializes it with empty json.
+                var options = getPassthrough(dtoOptions);
                 var dataObject = new kony.sdk.dto.DataObject(config.tableName);
                 DataSource.prototype.addOptionsToDTO(dataObject, dtoOptions);
-                var options = {};
                 options[constants.DATA_OBJECT] = dataObject;
                 options[constants.HEADERS_STRING] = headers;
                 options[constants.QUERY_PARAMS] = finalCriteria;
@@ -1436,6 +1452,8 @@
             for (var headKey in headerParams) {
                 headers[headKey] = headerParams[headKey];
             }
+            //Adds passthrough to options if provided by user else initializes it with empty json.
+            var options = getPassthrough(dtoOptions);
             var dataObject = new kony.sdk.dto.DataObject(config.tableName);
             DataSource.prototype.addOptionsToDTO(dataObject, dtoOptions);
             var dbobject = DBAssembler.toDBJson(BaseModel, config);
@@ -1475,7 +1493,6 @@
                     delete BaseModel.attributeMap[attributeMap[attribute]];
                 }
             }
-            var options = {};
             options[constants.DATA_OBJECT] = dataObject;
             options[constants.HEADERS_STRING] = headers;
             var httpOptions = kony.mvc.MDAApplication.getSharedInstance().appContext.httpRequestOptions;
@@ -1517,6 +1534,8 @@
             for (var headKey in headerParams) {
                 headers[headKey] = headerParams[headKey];
             }
+            //Adds passthrough to options if provided by user else initializes it with empty json.
+            var options = getPassthrough(dtoOptions);
             var dataObject = new kony.sdk.dto.DataObject(config.tableName);
             DataSource.prototype.addOptionsToDTO(dataObject, dtoOptions);
             var dbobject = DBAssembler.toDBJson(BaseModel, config);
@@ -1556,7 +1575,6 @@
                     delete BaseModel.attributeMap[attributeMap[attribute]];
                 }
             }
-            var options = {};
             options[constants.DATA_OBJECT] = dataObject;
             options[constants.HEADERS_STRING] = headers;
             var httpOptions = kony.mvc.MDAApplication.getSharedInstance().appContext.httpRequestOptions;
@@ -1599,9 +1617,10 @@
             for (var headKey in headerParams) {
                 headers[headKey] = headerParams[headKey];
             }
+            //Adds passthrough to options if provided by user else initializes it with empty json.
+            var options = getPassthrough(dtoOptions);
             var dataObject = new kony.sdk.dto.DataObject(config.tableName);
             DataSource.prototype.addOptionsToDTO(dataObject, dtoOptions);
-            var options = {};
             options[constants.DATA_OBJECT] = dataObject;
             options[constants.HEADERS_STRING] = headers;
             var httpOptions = kony.mvc.MDAApplication.getSharedInstance().appContext.httpRequestOptions;
@@ -1646,6 +1665,8 @@
             for (var headKey in headerParams) {
                 headers[headKey] = headerParams[headKey];
             }
+            //Adds passthrough to options if provided by user else initializes it with empty json.
+            var options = getPassthrough(dtoOptions);
             var dataObject = new kony.sdk.dto.DataObject(config.tableName);
             DataSource.prototype.addOptionsToDTO(dataObject, dtoOptions);
             var dbobject = DBAssembler.toDBJson(BaseModel, config);
@@ -1685,7 +1706,6 @@
                     delete BaseModel.attributeMap[attributeMap[attribute]];
                 }
             }
-            var options = {};
             options[constants.DATA_OBJECT] = dataObject;
             options[constants.HEADERS_STRING] = headers;
             var httpOptions = kony.mvc.MDAApplication.getSharedInstance().appContext.httpRequestOptions;
@@ -1723,6 +1743,8 @@
             for (var headKey in headerParams) {
                 headers[headKey] = headerParams[headKey];
             }
+            //Adds passthrough to options if provided by user else initializes it with empty json.
+            var options = getPassthrough(dtoOptions);
             var objSvc;
             if (accessMode === undefined) {
                 accessMode = kony.mvc.MDAApplication.getSharedInstance().getAppMode();
@@ -1735,7 +1757,6 @@
                     dataObject.addField(key, dbobject[key]);
                 }
             }
-            var options = {};
             options[constants.DATA_OBJECT] = dataObject;
             options[constants.HEADERS_STRING] = headers;
             var httpOptions = kony.mvc.MDAApplication.getSharedInstance().appContext.httpRequestOptions;
@@ -1785,13 +1806,14 @@
             for (var headKey in headerParams) {
                 headers[headKey] = headerParams[headKey];
             }
+            //Adds passthrough to options if provided by user else initializes it with empty json.
+            var options = getPassthrough(dtoOptions);
             var dataObject = new kony.sdk.dto.DataObject(config.tableName);
             DataSource.prototype.addOptionsToDTO(dataObject, dtoOptions);
             var keys = Object.keys(primaykeyobj);
             for (var records in keys) {
                 dataObject.addField(keys[records], primaykeyobj[keys[records]]);
             }
-            var options = {};
             options[constants.DATA_OBJECT] = dataObject;
             options[constants.HEADERS_STRING] = headers;
             //options[constants.QUERY_PARAMS]= primaykeyobj;
@@ -2156,22 +2178,29 @@
             var formToPresent = uiTag;
             this.presentForm(formToPresent, uiTag, context);
         };
+        MDABaseNavigator.prototype._asyncNavStack = {};
         MDABaseNavigator.prototype.presentForm = function(form, uiTag, viewModel) {
             var context = {};
+            //view model can be null, can be object.
             context['viewModel'] = viewModel;
             context._presenter = this.presentationController;
             var config = this.getConfig(form);
             context._formConfig = config;
             var _currentForm = kony.application.getCurrentForm();
-            if (_currentForm && form == _currentForm.id) {
-                var controller = _kony.mvc.GetController(form, true);
-                controller.updateUI(context['viewModel']);
+            if (this._asyncNavStack.hasOwnProperty(form)) {
+                if (viewModel) this._asyncNavStack[form].push(viewModel);
             } else {
-                try {
-                    var frmNavObject = new kony.mvc.Navigation(form);
-                    frmNavObject.navigate(context);
-                } catch (err) {
-                    throw new Exception('ERROR_CODE_300', 'Error at Navigator, Missing or Wrong UITag : ' + err);
+                if (_currentForm && form == _currentForm.id) {
+                    var controller = _kony.mvc.GetController(form, true);
+                    controller.updateUI(context['viewModel']);
+                } else {
+                    try {
+                        this._asyncNavStack[form] = [];
+                        var frmNavObject = new kony.mvc.Navigation(form);
+                        frmNavObject.navigate(context);
+                    } catch (err) {
+                        throw new Exception('ERROR_CODE_300', 'Error at Navigator, Missing or Wrong UITag : ' + err);
+                    }
                 }
             }
         };
@@ -4476,8 +4505,16 @@
                 this.eventDelegate = context._presenter;
                 this.presenter = context._presenter;
                 this.config = context._formConfig;
+                var formName = this.view.id;
                 if ('viewModel' in context) {
                     this.updateUI(context.viewModel);
+                }
+                if (context._presenter.navigator._asyncNavStack.hasOwnProperty(formName)) {
+                    var contexts = context._presenter.navigator._asyncNavStack[formName];
+                    for (var index in contexts) {
+                        this.updateUI(contexts[index]);
+                    }
+                    delete context._presenter.navigator._asyncNavStack[formName];
                 }
             }
         };

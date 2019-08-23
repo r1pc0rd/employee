@@ -15,7 +15,7 @@ define("userfrmLoginController", {
      * @param {String - password} - password entered in password text box
      **/
     doUserStoreLogin: function(username, password) {
-        // debugger;
+        debugger;
         username = this.view.txtUser.text;
         password = this.view.txtPassWord.text;
         this.userEmail = username;
@@ -38,7 +38,7 @@ define("userfrmLoginController", {
         }
     },
     userFetchSuccess: function(result) {
-        // debugger;
+        debugger;
         if (result !== undefined && result.groups !== undefined) {
             var groupLength = result.groups.length;
             for (i = 0; i < groupLength; i++) {

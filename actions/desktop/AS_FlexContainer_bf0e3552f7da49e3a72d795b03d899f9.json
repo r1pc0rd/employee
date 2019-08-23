@@ -17,7 +17,9 @@
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true,
-            "package": ""
+            "package": "",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"flxLogout\"\n    }\n}",
+            "isCustomInput": false
         }]
     }
 }
