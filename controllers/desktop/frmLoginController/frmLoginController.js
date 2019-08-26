@@ -1,6 +1,6 @@
 define({ 
   /**
-	 * @function onNavigate
+	 * @function onNavigate - Function
 	 * @description - This function will call disable error function to disable the error label visibility
 	 **/
   userEmail:null,
