@@ -3,4 +3,4 @@ kony.globals["apptitle"] = "Employee Directory";
 kony.globals["defaultLocale"] = "en_US";
 kony.globals["locales"] = ["en_US"];
 kony.globals["localization"] = "true";
-kony.globals["i18nVersion"] = "1050860482";
+kony.globals["i18nVersion"] = "259474591";

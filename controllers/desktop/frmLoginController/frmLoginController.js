@@ -1,7 +1,7 @@
 define({ 
   /**
-	 * @function onNavigate - Function
-	 * @description - This function will call disable error function to disable the error label visibility
+	 * @function onNavigate
+	 * @description - This function will call disable error function to disable the error label visibility - true
 	 **/
   userEmail:null,
 
@@ -17,7 +17,7 @@ define({
      * @param {String - password} - password entered in password text box
 	 **/
   doUserStoreLogin : function(username,password){
-    debugger;
+   
     username=this.view.txtUser.text;
     password=this.view.txtPassWord.text;
     this.userEmail=username;
@@ -43,7 +43,7 @@ define({
     }
   },
   userFetchSuccess:function(result){
-    debugger;
+    
     if(result!==undefined && result.groups!==undefined){
       var groupLength=result.groups.length;
       for(i=0;i<groupLength;i++){

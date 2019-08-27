@@ -19,7 +19,7 @@
             "codeSnippet": "this.doUserStoreLogin(this.view.txtUser.text,this.view.txtPassWord.text);",
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": false
         }, {
             "id": "NAVIGATE_TO_FORM___fbd9b4fad77f44c28685688c0c77aacb",
             "type": "NAVIGATE_TO_FORM",
@@ -30,6 +30,7 @@
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true,
+            "disabled": true,
             "package": "",
             "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"btnSubmit\"\n    }\n}",
             "isCustomInput": false

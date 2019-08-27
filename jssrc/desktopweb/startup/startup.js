@@ -5,18 +5,18 @@ kony.globals["defaultLocale"] = "en_US";
 kony.globals["locales"] = ["en_US"];
 kony.globals["i18nArray"] = [];
 kony.globals["localization"] = "true";
-kony.globals["i18nVersion"] = "1050860482";
+kony.globals["i18nVersion"] = "259474591";
 //startup.js
 var appConfig = {
     appId: "EmpDirAdmin",
     appName: "EmployeeDirectory",
     appVersion: "1.0.1",
-    isturlbase: "https://m100000015001.sit2-konycloud.com/services",
+    isturlbase: "https://mtmw100000011003.sit2-konycloud.com/services",
     isDebug: true,
     isMFApp: true,
-    appKey: "7f8b691400ff0d17cb26f11aa081686",
-    appSecret: "af70c6d8b69217e4d8d5e14e9a925aa4",
-    serviceUrl: "https://100000015.auth.sit2-konycloud.com/appconfig",
+    appKey: "3613707d564d383be3734d6e872656ed",
+    appSecret: "44d56a41df6df6c3a00b921fa6ebfc81",
+    serviceUrl: "https://100000011.auth.sit2-konycloud.com/appconfig",
     svcDoc: {
         "identity_meta": {
             "reusableLinkedinLogin": {
@@ -27,93 +27,93 @@ var appConfig = {
             }
         },
         "app_version": "1.0",
-        "baseId": "aa54413b-9a30-4d6e-8e3a-c71239f68dfb",
+        "baseId": "94abacb1-3d1a-426c-86be-09fcc1e1bb5a",
         "app_default_version": "1.0",
         "login": [{
-            "provider_type": "userstore",
-            "forgot_pswd_submit_userid": "https://100000015.auth.sit2-konycloud.com/forgot_password/submit_userid/",
-            "reset_pswd": "https://100000015.auth.sit2-konycloud.com/forgot_password/reset_password/",
-            "alias": "test",
-            "type": "basic",
-            "prov": "test",
-            "url": "https://100000015.auth.sit2-konycloud.com"
-        }, {
-            "provider_type": "konyads",
-            "alias": "MicrosoftActiveDirectory",
-            "type": "basic",
-            "prov": "MicrosoftActiveDirectory",
-            "url": "https://100000015.auth.sit2-konycloud.com"
-        }, {
             "provider_type": "oauth2",
             "alias": "reusableLinkedinLogin",
             "type": "oauth2",
             "prov": "reusableLinkedinLogin",
-            "url": "https://100000015.auth.sit2-konycloud.com"
-        }, {
-            "provider_type": "oauth2",
-            "alias": "reusableOffice365Login",
-            "type": "oauth2",
-            "prov": "reusableOffice365Login",
-            "url": "https://100000015.auth.sit2-konycloud.com"
+            "url": "https://100000011.auth.sit2-konycloud.com"
         }, {
             "provider_type": "userstore",
-            "forgot_pswd_submit_userid": "https://100000015.auth.sit2-konycloud.com/forgot_password/submit_userid/",
-            "reset_pswd": "https://100000015.auth.sit2-konycloud.com/forgot_password/reset_password/",
+            "forgot_pswd_submit_userid": "https://100000011.auth.sit2-konycloud.com/forgot_password/submit_userid/",
+            "reset_pswd": "https://100000011.auth.sit2-konycloud.com/forgot_password/reset_password/",
             "alias": "userstore",
             "type": "basic",
             "prov": "userstore",
-            "url": "https://100000015.auth.sit2-konycloud.com"
+            "url": "https://100000011.auth.sit2-konycloud.com"
         }, {
             "provider_type": "facebook",
             "alias": "reusableFacebookLogin",
             "type": "oauth2",
             "prov": "reusableFacebookLogin",
-            "url": "https://100000015.auth.sit2-konycloud.com"
+            "url": "https://100000011.auth.sit2-konycloud.com"
+        }, {
+            "provider_type": "konyads",
+            "alias": "MicrosoftActiveDirectory",
+            "type": "basic",
+            "prov": "MicrosoftActiveDirectory",
+            "url": "https://100000011.auth.sit2-konycloud.com"
+        }, {
+            "provider_type": "userstore",
+            "forgot_pswd_submit_userid": "https://100000011.auth.sit2-konycloud.com/forgot_password/submit_userid/",
+            "reset_pswd": "https://100000011.auth.sit2-konycloud.com/forgot_password/reset_password/",
+            "alias": "trevtest",
+            "type": "basic",
+            "prov": "trevtest",
+            "url": "https://100000011.auth.sit2-konycloud.com"
+        }, {
+            "provider_type": "oauth2",
+            "alias": "reusableOffice365Login",
+            "type": "oauth2",
+            "prov": "reusableOffice365Login",
+            "url": "https://100000011.auth.sit2-konycloud.com"
         }],
         "services_meta": {
             "EmployeeModelSchema": {
                 "offline": false,
-                "metadata_url": "https://m100000015001.sit2-konycloud.com/services/metadata/v1/EmployeeModelSchema",
+                "metadata_url": "https://mtmw100000011003.sit2-konycloud.com/services/metadata/v1/EmployeeModelSchema",
                 "type": "objectsvc",
                 "version": "1.0",
-                "url": "https://m100000015001.sit2-konycloud.com/services/data/v1/EmployeeModelSchema"
+                "url": "https://mtmw100000011003.sit2-konycloud.com/services/data/v1/EmployeeModelSchema"
             },
             "StorageObjectServices": {
                 "offline": false,
-                "metadata_url": "https://m100000015001.sit2-konycloud.com/services/metadata/v1/StorageObjectServices",
+                "metadata_url": "https://mtmw100000011003.sit2-konycloud.com/services/metadata/v1/StorageObjectServices",
                 "type": "objectsvc",
                 "version": "1.0",
-                "url": "https://m100000015001.sit2-konycloud.com/services/data/v1/StorageObjectServices"
+                "url": "https://mtmw100000011003.sit2-konycloud.com/services/data/v1/StorageObjectServices"
             },
             "fetchImageService": {
                 "type": "integsvc",
                 "version": "1.0",
-                "url": "https://m100000015001.sit2-konycloud.com/services/fetchImageService"
+                "url": "https://mtmw100000011003.sit2-konycloud.com/services/fetchImageService"
             },
             "EmployeeStorageObjects": {
                 "type": "integsvc",
                 "version": "1.0",
-                "url": "https://m100000015001.sit2-konycloud.com/services/EmployeeStorageObjects"
+                "url": "https://mtmw100000011003.sit2-konycloud.com/services/EmployeeStorageObjects"
             }
         },
-        "selflink": "https://100000015.auth.sit2-konycloud.com/appconfig",
+        "selflink": "https://100000011.auth.sit2-konycloud.com/appconfig",
         "integsvc": {
-            "_internal_logout": "https://m100000015001.sit2-konycloud.com/services/IST",
-            "fetchImageService": "https://m100000015001.sit2-konycloud.com/services/fetchImageService",
-            "EmployeeStorageObjects": "https://m100000015001.sit2-konycloud.com/services/EmployeeStorageObjects"
+            "_internal_logout": "https://mtmw100000011003.sit2-konycloud.com/services/IST",
+            "fetchImageService": "https://mtmw100000011003.sit2-konycloud.com/services/fetchImageService",
+            "EmployeeStorageObjects": "https://mtmw100000011003.sit2-konycloud.com/services/EmployeeStorageObjects"
         },
-        "service_doc_etag": "0000016CBF5C7BC8",
-        "appId": "c5317a06-4b5f-4413-baf5-634a951c4ec0",
+        "service_doc_etag": "0000016CCFB59680",
+        "appId": "8873f425-cdb9-4f8d-82ae-83fc68804a40",
         "identity_features": {
             "reporting_params_header_allowed": true
         },
         "name": "EmpDirTrev",
         "reportingsvc": {
-            "session": "https://m100000015001.sit2-konycloud.com/services/IST",
-            "custom": "https://m100000015001.sit2-konycloud.com/services/CMS"
+            "session": "https://mtmw100000011003.sit2-konycloud.com/services/IST",
+            "custom": "https://mtmw100000011003.sit2-konycloud.com/services/CMS"
         },
         "Webapp": {
-            "url": "https://m100000015001.sit2-konycloud.com/apps/EmpDirAdmin"
+            "url": "https://mtmw100000011003.sit2-konycloud.com/apps/EmpDirAdmin"
         }
     },
     eventTypes: ["FormEntry", "Error", "Crash"],

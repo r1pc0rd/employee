@@ -1,6 +1,6 @@
 {
   "subType" : "customapp",
-  "description" : "EmpDirTrev",
+  "description" : "EmployeeDirectory\r\n",
   "version" : "1.0",
   "intSvcs" : [ {
     "name" : "fetchImageService",
@@ -21,5 +21,5 @@
     "version" : "1.0",
     "etag" : "b1bf803c-3246-4b00-b87b-804600ec2a18"
   } ],
-  "identity" : [ "userstore", "reusableLinkedinLogin", "reusableFacebookLogin", "reusableOffice365Login", "MicrosoftActiveDirectory", "test" ]
+  "identity" : [ "userstore", "reusableLinkedinLogin", "reusableFacebookLogin", "reusableOffice365Login", "MicrosoftActiveDirectory", "trevtest" ]
 }
