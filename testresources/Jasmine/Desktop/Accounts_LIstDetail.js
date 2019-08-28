@@ -1,4 +1,4 @@
-describe("Accounts", function() {
+describe("Accounts_LIstDetail", function() {
     it("LIstDetail", async function() {
 	kony.automation.flexcontainer.click(["frmEmpList","segEmployeeList[0]","flxTemplateEmpList"]);
 	kony.automation.flexcontainer.click(["frmEmpDetails","flxFirstName"]);
