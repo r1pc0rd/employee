@@ -1,4 +1,4 @@
-describe("Accounts", function() {
+describe("Accounts Logout", function() {
     it("Logout", async function() {
 	kony.automation.flexcontainer.click(["frmEmpList","empHeader1","flxUserInfo"]);
 	kony.automation.flexcontainer.click(["frmEmpList","flxLogout"]);

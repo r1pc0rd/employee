@@ -1,4 +1,4 @@
-describe("Accounts", function() {
+describe("Accounts_Login", function() {
     it("Login", async function() {
 	kony.automation.textbox.enterText(["frmLogin","txtUser"],"demo@kony.com");
 	// :User Injected Code Snippet [// - [1 lines]]
